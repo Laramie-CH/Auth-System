@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Sistema de Autenticación</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="firebase.js"></script>
+</head>
+<body>
+    <header class="header fade-in">
+        <div class="header-content">
+            <div class="logo">Mi App</div>
+            <div class="auth-buttons">
+                <button id="login-btn" class="auth-button login-btn">Iniciar Sesión</button>
+                <button id="register-btn" class="auth-button register-btn">Registrarse</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content fade-in">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Bienvenido a Mi App</h1>
+                <p>Una plataforma moderna y segura para gestionar tus datos.</p>
+                <div class="hero-buttons">
+                    <button class="auth-button feature-btn">Características</button>
+                    <button class="auth-button contact-btn">Contacto</button>
+                </div>
+            </div>
+        </div>
+        <div class="features-section">
+            <h2>Nuestras Características</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Seguridad</h3>
+                    <p>Autenticación segura con Firebase</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Accesible</h3>
+                    <p>Disponible en todos los dispositivos</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Rápido</h3>
+                    <p>Interfaz rápida y eficiente</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <h2>Contacto</h2>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <input type="text" placeholder="Nombre" class="contact-input">
+                    <input type="email" placeholder="Correo electrónico" class="contact-input">
+                    <textarea placeholder="Mensaje" class="contact-textarea"></textarea>
+                    <button type="submit" class="auth-button submit-btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

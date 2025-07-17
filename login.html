@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Sistema de Autenticación</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="firebase.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="auth-container fade-in">
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form" class="auth-form">
+            <input type="email" id="login-email" class="auth-input" placeholder="Correo electrónico" required>
+            <input type="password" id="login-password" class="auth-input" placeholder="Contraseña" required>
+            <button type="submit" class="auth-submit">Iniciar Sesión</button>
+            <div class="auth-link">
+                ¿No tienes cuenta? <a href="register.html">Regístrate aquí</a>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

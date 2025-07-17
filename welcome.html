@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido - Sistema de Autenticación</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="firebase.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header fade-in">
+        <div class="header-content">
+            <div class="logo">Mi App</div>
+            <div class="auth-buttons">
+                <button id="logout-btn" class="auth-button login-btn">Cerrar Sesión</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content fade-in">
+        <div class="welcome-message">
+            <h1>Bienvenido a Mi App</h1>
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <p>¡Gracias por iniciar sesión!</p>
+                    <p>Disfruta de todas las funcionalidades disponibles.</p>
+                    <div class="user-info">
+                        <span class="user-email">Correo: <span id="user-email"></span></span>
+                        <span class="user-date">Último inicio: <span id="user-last-login"></span></span>
+                    </div>
+                </div>
+                <div class="welcome-actions">
+                    <button class="auth-button logout-btn" onclick="logout()">Cerrar Sesión</button>
+                    <button class="auth-button profile-btn">Ver Perfil</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
